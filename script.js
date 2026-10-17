@@ -435,7 +435,7 @@
           var blob = new Blob([RESUME], { type: "text/plain;charset=utf-8" });
           var url = URL.createObjectURL(blob);
           var a = document.createElement("a");
-          a.href = url; a.download = "Yashdeep-Singh-Resume.txt";
+          a.href = url; a.download = "Yashdeep-Singh-Resume.pdf";
           document.body.appendChild(a); a.click(); a.remove();
           setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
         }
